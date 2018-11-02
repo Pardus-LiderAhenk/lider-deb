@@ -19,11 +19,11 @@ git-buildpackage bağımlılıkları kurulur.
 
 	gbp buildpackage --git-export-dir=/tmp/build-area -b -us -uc
 
-Yukarıdaki adımdan sonra **/tmp/build-area/** dizini altına **lider-console_1.1_all.deb** debian paketi oluşmaktadır.
+Yukarıdaki adımdan sonra **/tmp/build-area/** dizini altına **lider-server_1.1_amd64.deb** debian paketi oluşmaktadır.
 
 	sudo dpkg -i lider-server_1.1_amd64.deb
 
-komutu ile sisteme kurulur. Uygulamalar menüsünden veya uçbirimden **"lider-console"** olarak aratılarak çalıştırılabilir.
+komutu ile sisteme kurulur. 
 
 ##LiderAhenk Deposunun Sisteme Eklenmesi##
 
@@ -33,13 +33,13 @@ LiderAhenk bileşenleri ve eklentileri "repo.liderahenk.org" adresinde sunulmakt
 
 komutları ile "liderahenk-archive-keyring.asc" key dosyası indirilerek sisteme yüklenmelidir. Ardından;
 
-	sudo add-apt-repository 'deb [arch=amd64] http://repo.liderahenk.org stable main'
+	sudo add-apt-repository 'deb [arch=amd64] http://repo.liderahenk.org/liderahenk stable main'
 
 komutu ile depo adresi "/etc/apt/sources.list" dosyasına eklenir. 
 
 *NOT: Bu adımı uçbirimde ;*
 
-	printf  "deb [arch=amd64] http://repo.liderahenk.org stable main" | sudo tee -a /etc/apt/sources.list
+	printf  "deb [arch=amd64] http://repo.liderahenk.org/liderahenk stable main" | sudo tee -a /etc/apt/sources.list
 
 *komutu ile de yapabilirsiniz.*
 

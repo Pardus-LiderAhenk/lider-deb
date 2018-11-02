@@ -6,6 +6,5 @@ if [ -d /usr/share/lider-server ]; then
 	
 	update-rc.d lider defaults
 	systemctl start lider.service
-
+	systemctl enable lider.service
 fi
-
