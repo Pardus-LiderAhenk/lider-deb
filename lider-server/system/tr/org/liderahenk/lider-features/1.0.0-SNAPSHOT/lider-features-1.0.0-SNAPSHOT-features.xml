@@ -64,6 +64,7 @@
         <configfile finalname="/etc/tr.org.liderahenk.restore.cfg" override="true">mvn:tr.org.liderahenk/lider-restore/1.0.0/cfg</configfile>
         <configfile finalname="/etc/tr.org.liderahenk.ldaplogin.cfg" override="true">mvn:tr.org.liderahenk/lider-ldap-login/1.0.0/cfg</configfile>
         <configfile finalname="/etc/tr.org.liderahenk.ldap.cfg" override="true">mvn:tr.org.liderahenk/lider-ldap/1.0.0/cfg</configfile>
+        <configfile finalname="/etc/tr.org.liderahenk.notify.cfg" override="true">mvn:tr.org.liderahenk/lider-notify/1.0.0/cfg</configfile>
         <bundle start-level="90">mvn:tr.org.liderahenk/lider-remote-access/1.0.0
 		</bundle>
         <bundle start-level="90">mvn:tr.org.liderahenk/lider-package-manager/1.0.0
@@ -127,6 +128,8 @@
         <bundle start-level="90">mvn:tr.org.liderahenk/lider-ldap-login-db/1.0.0</bundle>
         <bundle start-level="90">mvn:tr.org.liderahenk/lider-ldap/1.0.0</bundle>
         <bundle start-level="90">mvn:tr.org.liderahenk/lider-ldap-db/1.0.0</bundle>
+        <bundle start-level="90">mvn:tr.org.liderahenk/lider-notify/1.0.0</bundle>
+        <bundle start-level="90">mvn:tr.org.liderahenk/lider-notify-db/1.0.0</bundle>
     </feature>
     <feature name="lider-dependent-bundles" description="Lider Ahenk Karaf Features" version="1.0.0.SNAPSHOT">
         <feature prerequisite="true" dependency="false">wrap</feature>
